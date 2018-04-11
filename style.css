@@ -180,16 +180,19 @@ header p {
 	width: 100%;
 	height: auto;
 	display: block;
+	opacity: 1;
+	transition: .7s;
 }
 .workimg a h6 {
 	position: absolute;
 	color: #fff;
 	text-align: center;
-	top: 100px;
+	top: 105px;
 	right: 0;
 	left: 0;
 	font-size: 18px;
 	opacity: 0;
+	transform: .8s;
 }
 
 #about {
