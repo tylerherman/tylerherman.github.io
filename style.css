@@ -121,26 +121,12 @@ header p {
 
 #work { 
 	padding: 60px 0 0px 0; 
-	margin: -100px 0 0 0;
+	margin: 0px 0 0 0;
 	overflow: visible;
 	background: transparent;
 	width: 100%;
 	clear: both;
 }
-/*
-@media screen and (max-width: 620px) {
-#work { 
-	padding: 30px 0 30px 0; 
-	}
-}
-#work h2 {  
-	display: block;
-	float: left;
-	width: 30%;
-	font-size: 20px;
-	color: #3c3c3c;
-	line-height: 28px;
-}*/
 
 .workimg { 
 	width: 100%;
@@ -157,7 +143,9 @@ header p {
 	margin: 10px 10px 20px;
 	overflow: hidden;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
-	transition: .3s;
+	position: relative;
+	background: #760f07;
+	transition: .1s;
 }
 
 @media screen and (max-width: 1420px) {
@@ -182,43 +170,27 @@ header p {
 	box-sizing: border-box;
 	}
 }
-.workimg a:hover { 
-	margin-top: 0px;
+.workimg a:hover img { 
+	opacity: .1;
 }
-@media screen and (max-width: 1020px) {
-.workimg a:hover { 
-	margin-top: 10px; 
-	}
+.workimg a:hover h6 { 
+	opacity: 1;
 }
-
 .workimg a img {
 	width: 100%;
 	height: auto;
 	display: block;
 }
-
-.workimg.featured {  
-	width: 100%;
-	clear: both;
-	background: url(img/featbg.png) bottom center no-repeat;
-	overflow: hidden;
-	margin: -52px 0 30px 0;
-	box-shadow: none;
-	height: 300px;
+.workimg a h6 {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	top: 100px;
+	right: 0;
+	left: 0;
+	font-size: 18px;
+	opacity: 0;
 }
-.workimg.featured img { 
-	width: auto; 
-	height: auto; 
-	box-shadow: none;
-	margin: 50px auto 0;
-	display: block;
-	box-shadow: 0px -10px 40px rgba(0,0,0,.2);
-	transition: .3s;
-}
-.workimg.featured img:hover { 
-	margin-top: 30px;
-}
-
 
 #about {
 	overflow: hidden;
