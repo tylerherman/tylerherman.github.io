@@ -181,7 +181,7 @@ header p {
 	height: auto;
 	display: block;
 	opacity: 1;
-	transition: .7s;
+	transition: .7s; 
 }
 .workimg a h6 {
 	position: absolute;
