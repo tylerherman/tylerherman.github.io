@@ -224,7 +224,7 @@ header p {
 }
 #about .about { 
 	overflow: hidden;
-	margin: 50px 0 80px 0;
+	margin: 50px 0 40px 0;
 	padding: 60px 0 0 0;
 	border-top: 1px solid #ececec;
 }
@@ -257,7 +257,7 @@ header p {
 #about .skills { 
 	clear: both; 
 	overflow: hidden;
-	margin: 0 0 72px 0;
+	margin: 0 0 60px 0;
 }
 #about .skills h4 { 
 	font-size: 26px; 
@@ -393,7 +393,10 @@ header p {
 	width: 100%;
 	}
 }
-
+#casestudy h5 { 
+	font-size: 24px;
+	margin: 30px 30px 0px 30px; 
+}  
 
 
 footer p { 
