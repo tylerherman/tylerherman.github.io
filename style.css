@@ -254,7 +254,11 @@ header p {
 	display: block;
 }
 @media screen and (max-width: 1000px) {
-#about .about p { width: 100%; }
+#about .about p { 
+	width: auto; 
+	box-sizing: border-box;
+	margin: 0 20px;
+	}
 }
 #about .skills { 
 	clear: both; 
