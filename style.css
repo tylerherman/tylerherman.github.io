@@ -260,6 +260,9 @@ header p {
 	margin: 0 20px;
 	}
 }
+@media screen and (max-width: 620px) {
+#about .about p { margin: 0 0px; }
+}
 #about .skills { 
 	clear: both; 
 	overflow: hidden;
@@ -287,7 +290,11 @@ header p {
 	margin: 0;
 }
 @media screen and (max-width: 1000px) {
-#about .skills ul { width: 100%; }
+#about .skills ul { 
+	width: 100%; 
+	box-sizing: border-box;
+	padding: 0 20px;
+	}
 }
 #about .skills li {
 	display: block;
@@ -321,12 +328,13 @@ header p {
 @media screen and (max-width: 1000px) {
 #about .job h6, #about .job h6 a {
 	width: 100%;
+	margin-bottom: 0;
 	}
 }
 
 #about .job h6 span { 
 	color: #868686; 
-	font-size: 16px;
+	font-size: 18px;
 }
 #about .job p {
 	width: 70%;
@@ -340,6 +348,8 @@ header p {
 @media screen and (max-width: 1000px) {
 #about .job p {
 	width: 100%;
+	box-sizing: border-box;
+	padding: 0 20px;
 	}
 }
 
