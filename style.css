@@ -1,6 +1,6 @@
 html { color: #222; font-size: 1em; line-height: 1.4; line-height: 1.15; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 ::-moz-selection { background: #b3d4fc; text-shadow: none; }
-::selection { background: #b3d4fc; text-shadow: none; }
+::selection { background: rgba(255,0,0,.7); text-shadow: none; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 audio, canvas, iframe, img, svg,video { vertical-align: middle; }
 fieldset { border: 0; margin: 0; padding: 0; }
@@ -401,7 +401,10 @@ header p {
 }
 
 
-#casestudy img.fullcol { width: 100%; }
+#casestudy img.fullcol { 
+	margin: 10px auto;
+	width: 100%; 
+}
 
 #casestudy img.old {
 	margin: 40px auto;
