@@ -171,10 +171,10 @@ h3 {
 }
 */
 
-#hpslider { width: 100%; overflow: hidden; height: 150px; margin: 100px 0; }
-#hpslider ul { list-style: none; padding: 0; width: 120%;}
+#hpslider { width: 100%; overflow: hidden; height: 400px; margin: 100px 0; }
+#hpslider ul { list-style: none; padding: 0; width: 120%; margin: 0; }
 #hpslider ul li { display: inline-block;  }
-#hpslider ul li img { max-width: 200px; }
+#hpslider ul li img {  }
 
 
 
