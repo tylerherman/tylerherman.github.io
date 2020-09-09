@@ -26,11 +26,12 @@
   <li><a href="portfolio.html"><img src="img/portfolio.png" alt="Portfolio" /></a></li>
 </ul>
 </menu>
-<!-- <a class="trigger">Learn More&hellip;</a> -->
 </header>
 </div>
-<section id="hpslider">
-    <ul id="imgs">
+
+<div id="scroller">
+  <div class="innerScrollArea">
+    <ul>
       <li>
         <img src="img/work/redwood-coast.jpg" alt="Redwood Coast" />
       </li>
@@ -247,8 +248,8 @@
         <img src="img/work/trinity.jpg" alt="Trinity General Store" />
       </li>
     </ul>
-  <div id="controler"> </div>
-</section>
+  </div>
+</div>
 
 
 
@@ -263,23 +264,51 @@
   <!--  <script type="text/javascript" src="slick/slick.min.js"></script> -->
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-  <script type="text/javascript" src="js/ImageScroll.js"></script> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
   <script type="text/javascript">
+      $(function(){
+          var scroller = $('#scroller div.innerScrollArea');
+          var scrollerContent = scroller.children('ul');
+          scrollerContent.children().clone().appendTo(scrollerContent);
+          var curX = 0;
+          scrollerContent.children().each(function(){
+              var $this = $(this);
+              $this.css('left', curX);
+              curX += $this.outerWidth(true);
+          });
+          var fullW = curX / 2;
+          var viewportW = scroller.width();
   
-    $('#imgs').imageScroll({
-      orientation:"left",
-      speed:600,
-      interval:1000,
-      hoverPause:true,
-      callback:function(){
-        var ordinal = $(this).find("img").first().attr("src");
-        <!-- console.log(ordinal); -->
-        $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
-      }
-    });
+          // Scrolling speed management
+          var controller = {curSpeed:0, fullSpeed:2};
+          var $controller = $(controller);
+          var tweenToNewSpeed = function(newSpeed, duration)
+          {
+              if (duration === undefined)
+                  duration = 600;
+              $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+          };
   
-    </script>
+          // Pause on hover
+          scroller.hover(function(){
+              tweenToNewSpeed(0);
+          }, function(){
+              tweenToNewSpeed(controller.fullSpeed);
+          });
+  
+          // Scrolling management; start the automatical scrolling
+          var doScroll = function()
+          {
+              var curX = scroller.scrollLeft();
+              var newX = curX + controller.curSpeed;
+              if (newX > fullW*2 - viewportW)
+                  newX -= fullW;
+              scroller.scrollLeft(newX);
+          };
+          setInterval(doScroll, 10);
+          tweenToNewSpeed(controller.fullSpeed);
+      });
+  </script>
 
 
 
