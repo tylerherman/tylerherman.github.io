@@ -56,7 +56,7 @@ a { color: #fff; }
 
 
 body {
-  background: #fff7d8;
+  background: #fff;
 	overflow: hidden;
 	overflow-y: scroll;
 }
@@ -70,11 +70,9 @@ body { overflow-x: scroll;  }
   margin: 0 auto;
 }
 header { 
-  top: 0;
-  left: 0;
-  width: 360px;
-  position: absolute; 
+
 }
+
 /*
 @media screen and (max-width: 900px) {
   header { 
@@ -95,8 +93,7 @@ header {
 */
 
 header img { 
-  margin: 20px auto 40px auto; 
-  display: block;
+
 }
 /*
 @media screen and (max-width: 900px) {
@@ -125,6 +122,7 @@ header h2 {
 menu {
   padding: 0; 
   margin: 0; 
+  float: right;
 }
 menu ul { 
   list-style: none; 
@@ -134,8 +132,7 @@ menu ul {
 menu ul a { text-decoration: none; overflow: hidden; }
 menu ul a img {
   display: block;
-  margin: 20px auto 10px;
-  width: 85%;
+  margin: 20px 0 10px;
 }
 menu ul a img:hover { opacity: .8; }
 
@@ -174,8 +171,16 @@ h3 {
 }
 */
 
+#hpslider { width: 100%; overflow: hidden; height: 150px; margin: 100px 0; }
+#hpslider ul { list-style: none; padding: 0; width: 120%;}
+#hpslider ul li { display: inline-block;  }
+#hpslider ul li img { max-width: 200px; }
+
+
+
+
 .maincol {
-  width: 500px;
+  width: 400px;
   float: left;
 }
 
@@ -189,7 +194,7 @@ h3 {
 */
 
 .sidecol {
-  width: 300px;
+  width: 220px;
   float: left;
   margin-left: 30px;
 }
