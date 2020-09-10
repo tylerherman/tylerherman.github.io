@@ -69,46 +69,35 @@ body { overflow-x: scroll;  }
   width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1200px) {
+  .wrap { width: 100%; }
+}
+
 header { 
 
 }
 
-/*
-@media screen and (max-width: 900px) {
-  header { 
-    top: 0;
-    left: 0;
-    width: 280px;
-    position: fixed; 
+@media screen and (max-width: 920px) {
+  header img#logo { 
+    margin: 0 auto; display: block;
   }
+  header menu { display: block; clear: both; margin: 10px auto; float: none; }
+  header menu li { display: inline-block; text-align: center; margin: 10px 0 0 10px; }
+  header menu ul li a img { margin: 0; }
 }
-@media screen and (max-width: 640px) {
-  header { 
-    top: auto;
-    left: auto;
-    width: 100%;
-    position: relative; 
-  }
+@media screen and (max-width: 676px) {
+header img#logo { width: 100%; height: auto; }
 }
-*/
 
-header img { 
+@media screen and (max-width: 676px) {
+  header menu li { display: block; width: 50%; margin: 0; float: left; }
+  header menu ul li a img { display: block; margin: 0 auto 10px auto; }
+}
+@media screen and (max-width: 436px) {
+  header menu li { display: block; width: 50%; margin: 0; float: left; }
+  header menu ul li a img { width: 100%; height: auto; }
+}
 
-}
-/*
-@media screen and (max-width: 900px) {
-  header img { 
-    width: 94%;
-    margin: 10px 3% 0 3%;
-  }
-}
-@media screen and (max-width: 640px) {
-  header img { 
-    width: auto;
-    margin: 10px auto 10px auto;
-  }
-}
-*/
 
 header h2 {
   width: 300px;
