@@ -143,8 +143,11 @@ h3 {
 }
 
 .page {
-  margin: 10px 0 10px 380px;
-  overflow: hidden;
+  margin: 10px 0 10px 0px;
+  overflow: visible;
+  clear: both;
+  position: relative;
+
 }
 /*
 @media screen and (max-width: 900px) {
@@ -180,7 +183,7 @@ h3 {
 
 
 .maincol {
-  width: 400px;
+  margin-right: 270px;
   float: left;
 }
 
@@ -195,8 +198,9 @@ h3 {
 
 .sidecol {
   width: 220px;
-  float: left;
-  margin-left: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*
 @media screen and (max-width: 640px) {
@@ -210,8 +214,7 @@ h3 {
 .sidecol span { margin: 0 20px; }
 
 #work {  
-  margin: 10px 0 10px 360px;
-  overflow: hidden;
+  margin: 10px 0 10px 0px;
 }
 /*
 @media screen and (max-width: 900px) {
@@ -247,7 +250,7 @@ h3 {
     width: 94%;
   } 
  }
-
+*/
  @media screen and (max-width: 640px) {
   #work img {
     width: 44%;
@@ -260,7 +263,7 @@ h3 {
     width: 94%;
   } 
  }
-*/
+
 
 #work img#mainImg {
   width: 600px;
