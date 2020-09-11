@@ -141,7 +141,12 @@ h3 {
   margin: 20px 0 10px 30px;
   font-weight: normal;
 }
-
+h5 { 
+  font-size: 20px;
+  color: #762539; 
+  margin: 20px 0 10px 0px;
+  font-weight: normal;
+} 
 .page {
   margin: 10px 0 10px 0px;
   overflow: visible;
@@ -187,14 +192,13 @@ h3 {
   float: left;
 }
 
-/*
+
 @media screen and (max-width: 640px) {
   .maincol  { 
-      width: 100%;
-      margin: 10px 0px 10px 0px;
+      margin: 10px;
     }
   }
-*/
+
 
 .sidecol {
   width: 220px;
@@ -202,14 +206,15 @@ h3 {
   top: 0;
   right: 0;
 }
-/*
+
 @media screen and (max-width: 640px) {
   .sidecol { 
       width: auto;
-      margin: 10px 0px 10px 0px;
+      margin: 10px;
+      position: relative;
     }
   }
-*/
+
 
 .sidecol span { margin: 0 20px; }
 
