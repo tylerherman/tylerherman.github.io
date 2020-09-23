@@ -70,13 +70,10 @@ body { overflow-x: scroll;  }
   margin: 0 auto;
 }
 @media screen and (max-width: 1200px) {
-  .wrap { width: 100%; }
+  .wrap { width: 100%; padding: 10px; }
 }
 
-header { 
-
-}
-
+header { overflow: hidden; }
 @media screen and (max-width: 920px) {
   header img#logo { 
     margin: 0 auto; display: block;
@@ -210,8 +207,9 @@ h5 {
 @media screen and (max-width: 640px) {
   .sidecol { 
       width: auto;
-      margin: 10px;
+      margin: 10px 0;
       position: relative;
+      clear: both;
     }
   }
 
@@ -282,6 +280,8 @@ h5 {
   /* transition: .3s; */
 }
 
+#portrait { display: block; float: right; width: 340px; height: auto; margin: 15px 0 10px 30px; }
+
 textarea {
   width: 300px;
 }
@@ -320,6 +320,7 @@ span.copy {
   font-style: italic; 
   text-align: center;
   width: 100%;
+  margin: 40px 0 0 0;
 }
 
 
