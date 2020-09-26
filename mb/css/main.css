@@ -166,6 +166,9 @@ h5 {
 */
 
 #scroller { width: 100%; overflow: hidden; height: 400px; margin: 100px 0; position: relative; }
+@media screen and (max-width: 540px) {
+  #scroller { margin-top: 20px; }
+}
 .innerScrollArea {
   overflow: hidden;
   position: absolute;
@@ -174,6 +177,8 @@ h5 {
   top: 0;
   bottom: 0;
 }
+
+
 #scroller ul { list-style: none; padding: 0; width: 120%; margin: 0; position: relative; }
 #scroller ul li { padding: 0;
   margin: 0;
