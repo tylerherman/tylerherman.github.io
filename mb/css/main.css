@@ -219,7 +219,12 @@ h5 {
   }
 
 
-.sidecol span { margin: 0 20px; }
+.sidecol span {
+  font-size: 20px;
+	color: #762539;
+	margin: 20px 0 10px 20px;
+  font-weight: normal;
+}
 
 #work {  
   margin: 10px 0 10px 0px;
