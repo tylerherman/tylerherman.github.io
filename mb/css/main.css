@@ -532,7 +532,7 @@ a.trigger { cursor: pointer; }
 .portnav li { display: inline; }
 
 
-
+.top { position: fixed; bottom: 10px; right: 10px; }
 
 @media print {
   *,
