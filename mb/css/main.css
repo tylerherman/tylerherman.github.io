@@ -73,7 +73,7 @@ body { overflow-x: scroll;  }
   .wrap { width: 100%; padding: 10px; }
 }
 
-header { overflow: hidden; }
+header { overflow: hidden; margin-top: 40px; }
 @media screen and (max-width: 920px) {
   header img#logo { margin: 0 auto; display: block; }
   header menu { display: block; clear: both; margin: 10px auto; float: none; }
