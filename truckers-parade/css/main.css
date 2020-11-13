@@ -95,10 +95,8 @@ header h1 { display: block; width: 864px; height: 411px; background: url(../img/
 @media screen and (max-width: 480px) {
   .top-container h1 { font-size: 42px; }
 }
-.timgs { float: left; display: block; margin: 0px 0px 30px; }
-@media screen and (max-width: 960px) {
-  .timgs { width: 50%; height: auto; }
-}
+.timgs { float: left; display: block; margin: 0px 0px 30px; width: 50%; height: auto; }
+
 @media screen and (max-width: 440px) {
   .timgs { float: none; display: block; margin: 0px 0px 0px; width: 100%; height: auto; }
 }
