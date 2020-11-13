@@ -103,6 +103,10 @@ header h1 { display: block; width: 864px; height: 411px; background: url(../img/
 
 .top-container .two-col { width: 50%; float: left; margin-bottom: 20px; }
 .top-container .two-col a img { width: 200px; height: 180px; display: block; margin: 0 auto; }
+@media screen and (max-width: 400px) {
+  .top-container .two-col a img { width: 100%; height: auto; }
+
+}
 .top-container .two-col a:hover img { scale: 110%; transition: .3s ease-in-out; }
 @media screen and (max-width: 960px) {
   #map { width: 100%; height: auto; }
