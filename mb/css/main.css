@@ -59,6 +59,7 @@ body {
 	overflow: hidden;
 	overflow-y: scroll;
 }
+body#hp {  background: #fff url(../img/bg2.png) top repeat-x; }
 @media screen and (max-width: 1200px) {
 body { overflow-x: scroll;  }
 }
@@ -245,6 +246,17 @@ h5 {
   -moz-column-gap:      10px;
   column-count:         3;
   column-gap:           10px;  
+}
+#work div.smaller {  
+  margin: 0px 0 0px 0px;
+  clear: both;
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap:   25px;
+  -moz-column-count:    3;
+  -moz-column-gap:      25px;
+  column-count:         3;
+  column-gap:           25px;  
 }
 /*
 @media screen and (max-width: 900px) {
