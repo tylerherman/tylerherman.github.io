@@ -224,11 +224,11 @@ header a#donate:hover {
 .wrap { margin: 0 auto; max-width: 1200px; }
 .wrap h1 { text-align: left; margin: 20px 0 18px 0; }
 
-#endorsers {
+#endorsers > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-#endorsers div { margin-top: 20px; margin-bottom: 20px; }
+#endorsers div div { margin-top: 20px; margin-bottom: 20px; }
 
 #hpimg { 
   position: relative;
@@ -255,11 +255,18 @@ header a#donate:hover {
   box-shadow: 0px 2px 12px 2px rgba(0,0,0,.3);
  }
 
+ #media-imgs {  }
+ #media-imgs img { width: 100%; height: auto; }
+
+
 .page-body { margin: 0px auto 30px; max-width: 1200px;
   box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
   padding: 12px 30px 20px 30px;
   box-sizing: border-box;
+  overflow: hidden;
 }
+.page-body .img-right { display: block; float: right; margin: 10px 0px 5px 20px; }
+
 @media screen and (max-width: 1200px) {
   .page-body { max-width: auto; margin: 20px; }
 }
