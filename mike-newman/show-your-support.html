@@ -134,6 +134,80 @@ v_fields = new Array('sender_name','sender_email','sender_phone');alert_on = tru
 
 </script>
 
+<?php
+if(isset($_POST["submitForm"])){
+
+	$_name = cleanUp($_POST["sender_name"], false, true);
+
+	$_email = cleanUp($_POST["sender_email"], false, false);
+
+	$_message = cleanUp($_POST["sender_message"], true, true);
+
+	$_phone = cleanUp($_POST["sender_phone"], false, true);
+
+	
+	$_body = "You have been sent this message from your contact form\n\n";
+	
+	if($_name){
+		$_body .= "NAME: $_name\n\n";
+	}
+	
+	if($_email){
+		$_body .= "EMAIL: $_email\n\n";
+	}
+	
+	if($_url){
+		$_body .= "URL: $_url\n\n";
+	}
+	
+	if($_phone){
+		$_body .= "PHONE: $_phone\n\n";
+	}
+	
+	if($_message){
+	
+		//check length of body, reduce to max chars
+		if(strlen($_message) > $EMAIL_MAX){$_message= substr($_message, 0, $EMAIL_MAX);}else{$_message = $_message;}
+		if(strlen($_message) > $SMS_MAX){$_message2 = substr($_message, 0, $SMS_MAX);}else{$_message2 = $_message;}
+	}
+	
+	
+
+	//store the recipient(s)
+	$_to = array();
+
+	//now get the recipient(s)
+	$_to[] = "newman4supervisor@gmail.com";
+	
+	//define the subject
+	if(!$_subject){$_subject = "E-Mail from your contact form";}
+
+	
+	if(!$_name){$_name = "CONTACT FORM";}
+	if(!$_email){$_email = $_name;}
+	
+	//set the headers
+	$_header = "From: $_name < $_email >" . "\r\n" .
+"Reply-To: ".$_email."\r\n" .
+"Super-Simple-Mailer: supersimple.org";
+	
+	//we can send up to 2 emails (EMAIL and/or SMS)
+	if(count($_to) > 2){ $_to = array_slice($_to,0,2);}
+	
+	for($i=0;$i<count($_to);$i++){
+		
+		//get the correct message, based on where it is delivering to
+		if(strstr($_to[$i],"teleflip.com")){$_text = $_body.$_message2;}else{$_text = $_body.$_message;}
+		
+		//send the email(s)
+		mail($_to[$i], $_subject, $_text, $_header);
+		
+	}
+	
+	echo "<script type=\"text/javascript\">window.onload = function(){showThanks(thanks_message);}</script>";
+}
+?>
+
 
 </head>
 
