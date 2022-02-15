@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Show Your Support</title>
+  <meta name="description" content="Add your name to the endorsor list">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style type="text/css">
+
+		fieldset{margin:0;padding:0;border:0;}
+		label{width:250px; display:block;}
+		.txt_input{width:250px; display:block;}
+		textarea{height:80px; width:250px;}
+		input{display:block;}
+        input[type="checkbox"] { display: inline-block; clear: left; }
+		.req{color:#f00;font-size:90%;}
+		#form_errors{color:#f00; display:none;}
+		#form_thanks{color:#000; display:none;}
+	</style>
+	
+	<script type="text/javascript">
+v_fields = new Array('sender_name','sender_email','sender_phone');alert_on = true;thanks_on = true; thanks_message = "Thank you. We will add your name to the endorser list shortly.";	
+	function validateForm(){
+		
+		//alert(v_fields);
+		
+		//init errors
+		var err = "";
+		
+		//start checking fields
+		for(i=0;i<v_fields.length;i++){
+			
+			//store the field value
+			var _thisfield = eval("document.contact."+v_fields[i]+".value");
+			
+			//check the field value
+			if(v_fields[i] == "sender_name"){
+				if(!isAlpha(_thisfield)){ err += "Please enter a valid name\n";}
+			}else if(v_fields[i] == "sender_subject"){
+				if(!isAlpha(_thisfield)){ err += "Please enter a valid subject\n";}
+			}else if(v_fields[i] == "sender_email"){
+				if(!isEmail(_thisfield)){ err += "Please enter a valid email address\n";}
+			}else if(v_fields[i] == "sender_url"){
+				if(!isURL(_thisfield)){ err += "Please enter a valid URL\n";}
+			}else if(v_fields[i] == "sender_phone"){
+				if(!isPhone(_thisfield)){ err += "Please enter a valid phone number\n";}
+			}else if(v_fields[i] == "sender_message"){
+				if(!isText(_thisfield)){ err += "Please enter a valid message\n";}
+			}
+			
+		}//end for
+		
+		if(err != ""){ 
+			if(alert_on){
+				alert("The following errors have occurred\n"+err);
+			}else{
+				showErrors(err);
+			}
+			
+			return false;
+		
+		}
+		
+		return true;
+	}
+	
+	function showErrors(str){
+		var err = str.replace(/\n/g,"<br />");
+		document.getElementById("form_errors").innerHTML = err;
+		document.getElementById("form_errors").style.display = "block";
+	
+	}
+	
+	function showThanks(str){
+		var tym = str.replace(/\n/g,"<br />");
+		document.getElementById("form_thanks").innerHTML = tym;
+		document.getElementById("form_thanks").style.display = "block";
+	
+	}
+	
+	function isEmail(str){
+	if(str == "") return false;
+	var regex = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i
+	return regex.test(str);
+	}
+	
+	function isText(str){
+		if(str == "") return false;
+		return true;
+	}
+	
+	function isURL(str){
+		var regex = /[a-zA-Z0-9\.\/:]+/
+		return regex.test(str);
+	}
+	
+	function isPhone(str){
+		var regex = /^\(?[2-9]\d{2}[\)\.-]?\s?\d{3}[\s\.-]?\d{4}$/
+		return regex.test(str);
+	}
+	
+	function isAddress(str){
+		var regex = /[^a-zA-Z0-9\#\.]/g
+		if (regex.test(str)) return true;
+		return false;
+	}
+	
+	function isZip(str){
+		var regex = /\d{5,}/;
+		if(regex.test(str)) return true;
+		return false;
+	}
+	
+	function isAlpha(str){
+		var regex = /[a-zA-Z]/g
+		if (regex.test(str)) return true;
+		return false;
+	}
+	
+	function isAlphaNumeric(str){
+		var regex = /[^a-zA-Z0-9]/g
+		if (regex.test(str)) return false;
+		return true;
+	}
+
+</script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+		<h1><a href="index.html"><img src="img/mike-newman.png" alt="Mike Newman" /> </a></h1>
+		<nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="media.html">Media</a>
+      <a href="endorsers.html">Endorsers</a>
+      <a href="contact.html">Contact</a>
+      <a id="donate" href="donate.html">Donate</a>
+    </nav>  
+    </div>
+    </header>
+
+<div class="wrap">
+  <h1>Show Your Support</h1>
+
+</div>
+<section class="page-body">
+  <p>Support Mike by giving your endorsement. Please provide your name, address, city, state and zip. In order to be notified of up coming events please include your phone number and or email address.</p>
+  <hr />
+	<fieldset style="float:left;">
+		<p id="form_errors"></p>
+		<p id="form_thanks"></p>
+		<form name="contact" action="/show-your-support.php" method="post" onsubmit="return validateForm();">
+
+		<label>First &amp; Last Name <span class="req">*</span></label>
+		<input type="text" class="txt_input" name="sender_name" />
+
+		<label>Your E-Mail <span class="req">*</span></label>
+		<input type="text" class="txt_input" name="sender_email" />
+
+		<label>Telephone <span class="req">*</span></label>
+		<input type="text" class="txt_input" name="sender_phone" />
+        
+		<label>Address <span class="req">*</span></label>
+		<textarea name="sender_message"></textarea><br /><br />
+        <input type="checkbox" name="support" value="Support Check"> <span class="req">*</span><span style="display: inline-block;">By endorsing Mike, you agree to allow your name to be used as a supporter of Mike Newman for 4th District Supervisor 2022.</span><br /><br />
+            
+		<input type="submit" name="submitForm" value="Submit" />
+		</form>
+		</fieldset>
+
+</section>
+
+<footer>
+  &copy; 2022 Mike Newman for 4th District Supervisor
+</footer>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
