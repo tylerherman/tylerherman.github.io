@@ -166,7 +166,7 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 
 
 
-#casestudy { margin: 60px auto; color: #3c3c3c; }
+#casestudy { margin: 24px auto 48px; color: #3c3c3c; display: flex; flex-flow: column; }
 #casestudy * {box-sizing: border-box;}
 @media screen and (max-width: 1020px) {
 	#casestudy { margin: 30px auto; }
@@ -175,7 +175,7 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 #casestudy hr { border-top: 4px solid #ddd; width: 100px; margin: 15px auto; }
 #casestudy h5 { line-height: 32px; font-size: 28px; width: 680px; margin: 30px auto 20px; padding: 0 30px; }
 #casestudy p, #casestudy ul { line-height: 28px; font-size: 15px; width: 680px; margin: 20px auto; padding: 0 30px; display: block; }
-#casestudy ul { padding-left: 60px; line-height: 28px; font-size: 18px; }
+#casestudy ul { padding-left: 60px; line-height: 28px; font-size: 15px; }
 @media screen and (max-width: 800px) {
 	#casestudy p, #casestudy ul { line-height: 28px; font-size: 18px; margin: 20px 0px; width: auto; }
 }
@@ -191,6 +191,13 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 @media screen and (max-width: 1000px) {
 	#casestudy img.old { margin: 40px auto; display: block; max-width: auto; width: 100%; }
 }
+.team-role-duration { margin: 8px auto 0; width: 620px; display: flex; align-items: flex-start; flex: 0 0 100%; flex-flow: row; gap: 16px; justify-content: space-between; }
+@media screen and (max-width: 640px) {
+	.team-role-duration { width: auto; margin: 24px; }
+}
+	.team-role-duration div { display: flex; flex-flow: column; }
+	.team-role-duration h6 { font-size: 18px; text-transform: uppercase; font-weight: 600; }
+	#casestudy .team-role-duration ul { list-style: none; font-size: 15px; padding: 8px 0; width: auto; margin: 0; }
 
 .abc-wrap { position: relative; max-width: 1800px; }
 .about-content { margin: 0 auto; width: 800px; padding: 0 24px; overflow: auto; }
