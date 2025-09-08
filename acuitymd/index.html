@@ -8,54 +8,133 @@
 
     <meta name="google-site-verification" content="xZFWrekIl9XZtX2kfgEyaWd9TkoIvlKW9K_yl2FXV5U" />	
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://use.typekit.net/qch8wek.css">
+
     <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-                
-<header>
-    <div class="wrap">
-    	<a href="../"><img src="../img/back.png" /></a>
-        <h2>AcuityMD</h2>
-        <p>Design Work</p>
+      
+<header id="work-samples">
+    <div name="top" class="wrap">
+        <nav>
+            <ul>
+                <li><a href="../about">About</a></li>
+                <li><a href="../"><img src="../img/tyler-logo-white.svg" alt="Tyler Herman logo" height="80"  /></a></li>
+                <li><a href="../contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>AcuityMD</h1>
+        <p>Some work samples from my time at AcuityMD</p>
     </div>
 </header>
+                
     
 <div id="casestudy" class="wrap">
-    <h5>My Role</h5> 
-    <p class="intro">I was the first design hire at AcuityMD and it remained that way for over the first two-ish years. The product evolved from a simple single page app to having multiple modules for various personas in the medical device sales space. The primary persona we focused on was the sales rep, building out targeting, healthcare provider (HCP) and site of care (SoC) (hospital, surgery center, etc.) profiles which contain multple modules, as well as pipeline to manage opportunties. Additionally we built out some functionality for managing the whole sales organization with territories, which allows a user to break up the country into business units, regions and individual territories as well as and markets which is where products are defined along with the medical codes that are used to track volume against an HCP or SoC.</p>
-    
-    <img class="fullcol" src="https://tylerherman.dev/acuitymd/img/mobile.jpg" alt="mobile screen designs" />
-    
-    <p>I have millions of desktop screens but to keep it short here is a version of targeting. A sales rep can target a SoC, HCP or a larger group like an IDN, for one or many products that can be grouped together in a view. The list is defaulted to sort by case volume so a rep can see the top doctors or surgeons in their territory doing procedures that use the companies products. Of course there is more to targeting than just volume. There are multiple ways to filter down the list as well as data sources to make the sale happen on targeting and on the profiles. A sales rep job is not just selling to new targets but is upselling and managing existing customers, so it's helpful to know a doctor's volume and how many products they should be using and compare that to sales. Lastely, a sales rep's main goal is to hit their quota so it's important to show actual sales against the current run rate of existing customers and deals in the pipeline, so know in advance if that quoata will get hit or not.</p>
+    <p class="intro">I was the first design hire at AcuityMD. When I started the product was evolving from a simple single page app into something much larger.</p>
 
-    <img class="fullcol" src="https://tylerherman.dev/acuitymd/img/targeting.png" alt="desktop targeting view" />
+    <h3>The Problem Space</h3>
     
+    <div class="tabs">
+      	<ul class="tabs-nav">
+        	<li><a href="#tab-1">Product Market Fit <span>Will they pay for it?</span></a></li>
+        	<li><a href="#tab-2">Data Mindset <span>“Just give us the data”</span></a></li>
+        	<li><a href="#tab-3">CRM Mindset <span>CRM is a dirty word</span></a></li>
+      	</ul>
+    	<div class="tabs-stage">
+    	    <div id="tab-1">
+    	      	<p>Luckily, this one was right almost from the beginning. Most decision makers were previously sales reps themselves and got it right away. “I wish I had this when I was a rep” was a pretty common response. The targeting platform had a lot of value, so while there was still work to do building that out, many of the real problems were further downstream.</p>
+    	      	<h6>Solution</h6>
+    	      	<ul>
+    	      	  <li>Early sales success to validate targeting platform</li>
+    	      	  <li>Expanding targeting to more than just doctors by target hospitals and health networks </li>
+    	      	  <li>Expanding to other types of medical devices with different sales processes </li>
+    	      	  <li>Allow for tracking of the whole sales process, existing customer sales and sales contracts</li>
+    	      	</ul>
+    	    </div>
+    	    <div id="tab-2">
+    	      	<p>One of the early issues with some customers was seeing the value of the data but not of the product. They were used to buying data from providers and wanted to know why they couldn’t do the same with us. So it was our job to change this mindset but showing the value of getting our data in the hands of all their employees.</p>
+    	      	<h6>Solution</h6>
+    	      	<ul>
+    	      	  <li>Doctor and Hospital profiles with valuable data to help connect and make sales</li>
+    	      	  <li>Demonstrated reduction in onboarding time for new sales reps</li>
+    	      	  <li>Continuous data updates and improvements</li>
+    	      	</ul>
+    	    </div>
+    	    <div id="tab-3">
+    	      	<p>A CRM is only as good as the data that gets entered. Unfortunately many managers treat them like  a micromanagement tool, and the users don’t get any value in spending the time on data entry. So, garbage-in is often the result, leading to unreliable data. Or worse yet, a company spends millions in a tool like Salesforce for it only to go unused.</p>
+    	      	<h6>Solution</h6>
+    	      	<ul>
+    	      	  <li>Frictionless sales management with as little data entry as possible</li>
+    	      	  <li>Tie sales incentives and monitoring into the process</li>
+    	      	  <li>Move the entire process into a single tool to reduce context switching</li>
+    	      	  <li>Give managers a clear window into each employees work progress</li>
+    	      	</ul>
+    	    </div>
+    	</div>
+    </div>    
+    
+    <p>We focused on the sales rep persona for many of our product initiatives because better business outcomes start at the local level. Typically a national sales director will create forecasts for the year and pass down new quotas. Which is given to regional managers to divvy up for each of their sales reps. And finally the sales reps who are closest to the sales process are left to find some way to hit the number they were given. </p>
+
+    <img src="acuitymd/img/sales-process.svg" width="580px" class="sales-process" alt="sales process between personas" />
+
+    <p>If we could get sales reps to provide more accurate and timely information, it could be better used to create more accurate forecasts and greatly help with strategy and planning at both the regional and national levels. To help the sales rep persona we needed a mobile app they could use in the field. To help:</p>
+    <ul>
+        <li>Know which doctors and hospitals were doing the most volume</li>
+        <li>Find connections and ways to get in front of the right people</li> 
+        <li>Manage their opportunities from prospect through to closed-won </li>
+    </ul>
+       
+    <img class="fullcol" src="acuitymd/img/mobile.jpg" alt="mobile screen designs" />
+    
+    <p>The core of the product was targeting. Here are some of the improvements we added:</p>
+    
+    <ul>
+        <li><strong>Target Type</strong> - We learned early on that different products are sold to different groups. We started with physicians but added hospitals and different networks as well as contracts.</li>
+        <li><strong>Case Volume</strong> - Allows a user to target based on a specific procedure(s).</li>
+        <li><strong>Sales</strong> - Allows users to see which targets are already using a product and Opportunity shows how much additional upsell potential there is.</li>
+        <li><strong>Quota</strong> - Lets the sales rep and his/her manager see progress against their quota and how many more targets they need to hit their goal.</li>
+    </ul>
+    
+    <img class="fullcol" src="acuitymd/img/targeting.png" style="margin-bottom: 48px" alt="desktop targeting view" />
+    
+    <h3>Visual Design</h3>
     <p>Along with building out the interface I also have been working on branding, advertising and collateral material. Here are some examples of ads I've created for internal content promotion, events we host or are going to and feature promotion.</p>
 
-    <img class="fullcol" src="https://tylerherman.dev/acuitymd/img/ads.jpg" alt="ads for linked and paid sources" />
+    <img class="fullcol" src="acuitymd/img/ads.jpg" alt="ads for linked and paid sources" />
     
     <p>Postcards and physical printouts? Yep, even designed a bunch of physical collateral to our sales reps to use and handoffs, booth and signage design and of course post cards and product pages to provide at our booths.</p>
 
-    <img class="fullcol" src="https://tylerherman.dev/acuitymd/img/postcards.jpg" alt="event and product postcard collateral" />
-    <img class="fullcol" src="https://tylerherman.dev/acuitymd/img/print.jpg" alt="event and product postcard collateral" />
+    <img class="fullcol" src="acuitymd/img/postcards.jpg" alt="event and product postcard collateral" />
+    <img class="fullcol" src="acuitymd/img/print.jpg" alt="event and product postcard collateral" />
 
     <h5>Flywheel</h5> 
 
-    <p>Besides working on the application, advertising and branding I also worked on all the branding and signage for the event we put on each year called Flywheel. Started with the logo and then built out all website, slides, posters, floor decals, merch, and everything else you could think of.</p>
+    <p>Besides working on the application, advertising and branding I also worked on all the branding and signage for the event we put on each year called Flywheel. Started with the logo and then built out all websites, slides, posters, floor decals, merch, and everything else you could think of.</p>
     
-    <img class="fullcol" src="https://tylerherman.dev/acuitymd/img/flywheel.jpg" alt="Flywheel" />
-    <img class="fullcol" src="https://tylerherman.dev/acuitymd/img/flywheel2.jpg" alt="Flywheel" />
-
-
+    <img class="fullcol" src="acuitymd/img/flywheel.jpg" alt="Flywheel" />
+    <img class="fullcol" src="acuitymd/img/flywheel2.jpg" alt="Flywheel" />
 
 </div> 
+
 <footer>
 <div class="wrap">
-	<p>TylerHerman.com &copy; 2008-2025 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;707-599-2514&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;contact@tylerherman.com</p>
+    <div class="footercontent">
+        <div class="flogo">
+            <div><a href="../"><img src="../img/tyler-footer-logo.svg" alt="Tyler Herman logo" /></a></div>
+            <div>
+                <a href="https://www.linkedin.com/in/tylerherman2/"><img src="../img/linkedin.svg" alt="Linkedin" /></a>
+                <a href="https://www.instagram.com/tylerduzstuf/"><img src="../img/instagram.svg" alt="Instagram" /></a>
+            </div>
+        </div>
+        <p></p>
+    </div>
+	<p>tylerherman.dev &copy; 2008-2025 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;707-599-2514&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;contact@tylerherman.com</p>
 </div>              
 </footer>
 
+<a class="back-to-top" href="#top"><img src="../img/top.svg" alt="Back to top" height="64" width="64" /></a>
 
 <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
