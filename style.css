@@ -76,7 +76,7 @@ header nav ul li { margin: 0; padding: 0; display: inline-block; }
 header nav ul li a { color: #fff; }
 header nav ul li a img { margin: 0 24px; }
 header a:hover img { opacity: .7; }
-header h1 { margin: 12px 20px 0; color: #FFF; color: #FFF; text-align: center; font-size: 21px; font-weight: 300; }
+header h1 { margin: 12px 20px 8px; color: #FFF; color: #FFF; text-align: center; font-size: 21px; font-weight: 300; }
 header p { color: #fff; text-align: center; font-weight: 300; }
 
 header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-repeat; overflow: hidden; height: 270px; background-size: cover; }
@@ -165,7 +165,7 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 
 
 
-#casestudy { margin: 24px auto 48px; color: #3c3c3c; display: flex; flex-flow: column; }
+#casestudy { margin: 24px auto 48px; display: flex; flex-flow: column; }
 #casestudy * {box-sizing: border-box;}
 @media screen and (max-width: 1020px) {
 	#casestudy { margin: 30px auto; }
@@ -173,8 +173,11 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 #casestudy h2, #casestudy h3 { font-size: 36px; text-align: center; }
 #casestudy hr { border-top: 4px solid #ddd; width: 100px; margin: 15px auto; }
 #casestudy h5 { line-height: 32px; font-size: 28px; width: 680px; margin: 30px auto 20px; padding: 0 30px; }
+@media screen and (max-width: 680px) {
+	#casestudy h5 { line-height: 32px; font-size: 28px; width: 100%; margin: 30px auto 20px; padding: 0 30px; }
+}
 #casestudy p, #casestudy ul { line-height: 28px; font-size: 15px; width: 680px; margin: 20px auto; padding: 0 30px; display: block; }
-#casestudy ul { padding-left: 60px; line-height: 28px; font-size: 15px; }
+#casestudy ul { padding-left: 60px; line-height: 28px; font-size: 15px; list-style: disc; }
 @media screen and (max-width: 800px) {
 	#casestudy p, #casestudy ul { line-height: 28px; font-size: 18px; margin: 20px 0px; width: auto; }
 }
@@ -200,8 +203,12 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 	
 #casestudy .tabs { max-width: 620px; margin: 16px auto; }
 #casestudy .tabs-nav { padding:0; margin:0; width: 626px; }
+@media screen and (max-width: 640px) {
+	#casestudy .tabs { max-width: 100%; width: 100%; padding-left: 8px; padding-right: 8px; }
+	#casestudy .tabs-nav { width: 100%; }
+}
 #casestudy .tabs-nav li { list-style: none; padding: 0; margin: 0; display: block; float: left; width: 33%; }
-#casestudy .tabs-nav li a { color: #646464; font-weight: 600; display: block; border: 1px solid #f2f2f2; border-bottom: 3px solid #90FFC9; background: #fbfbfb; padding: 12px 16px 16px; margin: 0; height: auto; }
+#casestudy .tabs-nav li a { color: #646464; font-weight: 600; display: block; border: 1px solid #f2f2f2; border-bottom: 3px solid #90FFC9; background: #fbfbfb; padding: 12px 16px 16px; margin: 0; height: auto; line-height: 24px; }
 #casestudy .tabs-nav li a:hover { text-decoration: none; }
 #casestudy .tabs-nav li:first-child a { border-right: 0; border-top-left-radius: 6px; border-bottom: 3px solid #B6DCFF; }
 #casestudy .tabs-nav li:last-child a { border-left-color: transparent; border-top-right-radius: 6px; border-bottom: 3px solid #FFED89; }
@@ -209,6 +216,9 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 #casestudy .tab-active a:hover { text-decoration: none; cursor: default; }
 #casestudy .tab-active a span, #casestudy .tabs-nav li a span { display: block; clear: both; font-size: 14px; line-height: 18px; font-weight: 400; }
 #casestudy .tabs-stage { border: 1px solid #f2f2f2; border-radius: 0 0 6px 6px; border-top: 0; clear: both; padding: 16px; position: relative; top: -1px; }
+@media screen and (max-width: 640px) {
+	#casestudy .tabs-stage { padding: 8px; }
+}
 #casestudy .tabs-stage h6 { width: auto; padding: 0 16px; margin: 16px 0; font-size: 16px; font-weight: 600; }
 #casestudy .tabs-stage p { width: auto; padding: 0 16px; margin: 16px 0; }
 #casestudy .tabs-stage ul { width: auto; padding: 0 0 0 36px; margin: 16px 0; }
@@ -217,6 +227,9 @@ img.sales-process { margin: 16px auto; }
 img.sales-process { width: 100%; height: auto; }
 }
 
+#acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; }
+#acuity-intro h2 { max-width: 680px; margin: 24px auto; font-size: 32px; line-height: 42px; text-align: center; }
+#acuity-intro .a-image-wrap img { max-width: 1105px; height: auto; margin: 0 auto -80px auto; }
 
 .abc-wrap { position: relative; max-width: 1800px; }
 .about-content { margin: 0 auto; width: 800px; padding: 0 24px; overflow: auto; }
@@ -225,7 +238,9 @@ img.sales-process { width: 100%; height: auto; }
 }
 .about-content ul.about-ul-links { list-style: none; padding: 0; margin: 16px 0 24px 0; }
 .about-content ul.about-ul-links li { padding: 0 8px 0 0; display: inline-block; }
-
+@media screen and (max-width: 800px) {
+	.about-content ul.about-ul-links { padding-left: 16px; padding-right: 16px; }
+}
 .about-content p.intro { margin-top: 48px; font-weight: 300; line-height: 36px; font-size: 18px; }
 .about-content h3, #hikepass h3 { font-size: 24px; font-weight: 600; }
 .about-content h6, #hikepass h6 { font-size: 18px; font-weight: 600; }
@@ -259,11 +274,11 @@ img.sales-process { width: 100%; height: auto; }
 
 footer { padding: 2px 0 2px 0; background: #fbfbfb; border-top: 1px solid #f2f2f2; }
 footer .footercontent { display: flex; flex-direction: column; }
-footer .flogo { display: flex; flex-direction: column; margin: 16px 0 0 0; }
+footer .flogo { display: flex; flex-direction: column; margin: 16px 0 32px 0; }
 footer .flogo div { text-align: center; }
-footer .flogo div img { margin: 8px 8px 0; }
+footer .flogo div img { margin: 8px 8px 0; display: inline-block; }
 footer .flogo div img:hover { opacity: .8; }
-footer p { text-align: center; font-size: 12px; }
+footer p { text-align: center; font-size: 12px; padding: 0 8px 8px 8px; }
 
 .wrap { margin: 0 auto; width: 1400px; }
 @media screen and (max-width: 1420px) {
