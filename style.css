@@ -227,9 +227,15 @@ img.sales-process { margin: 16px auto; }
 img.sales-process { width: 100%; height: auto; }
 }
 
-#acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; }
-#acuity-intro h2 { max-width: 680px; margin: 24px auto; font-size: 32px; line-height: 42px; text-align: center; }
-#acuity-intro .a-image-wrap img { max-width: 1105px; height: auto; margin: 0 auto -80px auto; }
+#acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 680px; }
+#acuity-intro h2 { max-width: 680px; margin: 64px auto 32px; font-size: 36px; line-height: 48px; text-align: center; }
+#acuity-intro img { width: 100%; max-width: 1105px; height: auto; margin: 0 auto -80px auto; }
+@media screen and (max-width: 1105px) {
+	#acuity-intro { height: auto; }
+	#acuity-intro img { margin-bottom: 0px; }
+}
+
+
 
 .abc-wrap { position: relative; max-width: 1800px; }
 .about-content { margin: 0 auto; width: 800px; padding: 0 24px; overflow: auto; }
