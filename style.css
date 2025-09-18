@@ -230,11 +230,11 @@ img.national-sales { max-width: 680px; margin: 16px auto; }
 @media screen and (max-width: 680px) {
 	img.national-sales { width: 100%; height: auto; }
 }
-.five-col { margin: 16px auto; max-width: 1140px; display: flex; justify-content: space-around; }
-.five-col div { text-align: center; background: #fff; border-radius: 16px; width: calc(100% / 5); margin: 16px; -webkit-box-shadow: 0px 5px 12px 3px rgba(100,100,100,0.25); box-shadow: 0px 5px 12px 3px rgba(100,100,100,0.25); }
+.five-col { margin: 16px auto; max-width: 1140px; }
+.five-col div { text-align: center; background: #fff; border-radius: 16px; width: calc(100% / 5 - 32px;); margin: 16px; -webkit-box-shadow: 0px 5px 12px 3px rgba(100,100,100,0.25); box-shadow: 0px 5px 12px 3px rgba(100,100,100,0.25); }
 #casestudy .five-col div p { width: 100%; text-align: center; padding: 0 12px; margin-top: 12px; }
 #casestudy .five-col div h5 { width: 100%; text-align: center; margin: 8px 0; font-size: 18px; }
-#casestudy .five-col div img { width: 40px; height: 40px; margin-top: 16px; }
+#casestudy .five-col div img { width: 40px; height: 40px; margin: 16px auto 0; }
 
 
 #acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 680px; }
