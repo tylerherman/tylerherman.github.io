@@ -230,11 +230,17 @@ img.national-sales { max-width: 680px; margin: 16px auto; }
 @media screen and (max-width: 680px) {
 	img.national-sales { width: 100%; height: auto; }
 }
-.five-col { margin: 16px auto; max-width: 1140px; display: flex; justify-content: space-around; }
+.five-col { margin: 16px auto; max-width: 1140px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
 @media screen and (max-width: 1140px) {
 	.five-col { width: 100%; height: auto; }
 }
-.five-col div { text-align: center; background: #fff; border-radius: 16px; width: calc(100% / 5); margin: 16px; -webkit-box-shadow: 0px 5px 12px 3px rgba(100,100,100,0.25); box-shadow: 0px 5px 12px 3px rgba(100,100,100,0.25); gap: 10px; }
+.five-col div { text-align: center; background: #fff; border-radius: 16px; flex: 1 1 calc(20% - 8px); box-sizing: border-box; -webkit-box-shadow: 0px 5px 12px 3px rgba(100,100,100,0.25); box-shadow: 0px 5px 12px 3px rgba(100,100,100,0.25); gap: 10px; }
+@media screen and (max-width: 840px) {
+	.five-col div { flex: 1 1 calc(50% - 8px); }
+}
+@media screen and (max-width: 480px) {
+	.five-col div { flex: 1 1 100%; }
+}
 #casestudy .five-col div p { width: 100%; text-align: center; padding: 0 12px; margin-top: 0px; }
 #casestudy .five-col div h5 { width: 100%; text-align: center; margin: 8px 0; font-size: 18px; }
 #casestudy .five-col div img { width: 40px; height: 40px; margin: 16px auto 0; }
@@ -251,6 +257,7 @@ img.sales-goal { width: 476px; height: auto; margin: 16px auto; }
 @media screen and (max-width: 476px) {
 	img.sales-goal { width: 100%; height: auto; margin: 16px auto; }
 }
+
 
 
 .abc-wrap { position: relative; max-width: 1800px; }
