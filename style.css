@@ -224,8 +224,13 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 #casestudy .tabs-stage ul { width: auto; padding: 0 0 0 36px; margin: 16px 0; }
 img.sales-process { margin: 16px auto; }
 @media screen and (max-width: 580px) {
-img.sales-process { width: 100%; height: auto; }
+	img.sales-process { width: 100%; height: auto; }
 }
+img.national-sales { max-width: 680px; margin: 16px auto; }
+@media screen and (max-width: 680px) {
+	img.national-sales { width: 100%; height: auto; }
+}
+
 
 #acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 680px; }
 #acuity-intro h2 { max-width: 680px; margin: 64px auto 32px; font-size: 36px; line-height: 48px; text-align: center; }
