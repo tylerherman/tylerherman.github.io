@@ -182,7 +182,10 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 	#casestudy p, #casestudy ul { line-height: 28px; font-size: 18px; margin: 20px 0px; width: auto; }
 }
 #casestudy p.intro { font-weight: 300; line-height: 36px; font-size: 18px; }
-#casestudy img.fullcol { margin: 10px auto; width: 100%; }
+#casestudy img.fullcol { margin: 16px auto; width: 1024; }
+@media screen and (max-width: 1024px) {
+	#casestudy img.fullcol { margin: 16px auto; width: 100%; }
+}
 #casestudy img.midcol { margin: 16px auto; width: 680px; }
 @media screen and (max-width: 680px) {
 	#casestudy img.midcol { margin: 16px auto; display: block; width: 100%; }
@@ -255,7 +258,7 @@ img.national-sales { max-width: 680px; margin: 16px auto; }
 #acuity-intro img { width: 100%; max-width: 1105px; height: auto; margin: 0 auto -80px auto; }
 
 #agency-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 560px; }
-#agency-intro img { width: 100%; max-width: 1208px; height: auto; margin: -40px auto -80px auto; }
+#agency-intro img { width: 100%; max-width: 1208px; height: auto; margin: 20px auto -80px auto; }
 @media screen and (max-width: 1208px) {
 	#agency-intro img { width: 100%; max-width: none; height: auto; margin: 0 auto 0 auto; }
 }
@@ -267,6 +270,16 @@ img.sales-goal { width: 476px; height: auto; margin: 16px auto; }
 @media screen and (max-width: 476px) {
 	img.sales-goal { width: 100%; height: auto; margin: 16px auto; }
 }
+
+/* ========== FARECOMPARE ========== */ 
+#farecompare { background: #fff url(/farecompare/img/farecompare-bg.svg) top center no-repeat; background-size: 2400px 700px; }
+#farecompare ::selection { background-color: #006AB7; color: #fff; }
+#farecompare header { background: none;  }
+
+
+/* ========== ALLSTATE ========== */ 
+
+img#allstate-intro { width: 100%; max-width: 777px; height: auto; margin: 16px auto; }
 
 
 

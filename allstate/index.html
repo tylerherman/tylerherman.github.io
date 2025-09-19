@@ -29,6 +29,8 @@
     
 <div id="casestudy" class="wrap">
 
+    <img id="allstate-intro" src="/allstate/img/allstate-intro.jpg" alt="mobile mockups" />
+
     <h2>Photo Intake</h2>
     <p class="intro">My first product at Allstate was Photo Intake, a web application designed for mobile, that allowed customers to take and submit damage photos to have their claims completed faster (and save the company money).</p>
     
@@ -63,21 +65,25 @@
     <p>I came on to the product team as the sole designer after an initial product had already been created. I was tasked with creating a new self-guided experience at first for auto, also with a new design, that would take the user step-by-step around the vehicle, taking the photos necessary to create an initial estimate. This saved the company time and money having to send out a claim adjuster to verify the damage.</p>
     
     <h5>Measuring Success</h5>
-    <p>Since we had a pretty clear idea of what we were tasked with building, I had to think about what improvements if any needed, to be made to the user flow and how we'd do that without deviating too much from the timeline. From reviewing the native app, measuring analytics data and talking with stakeholders and users I came up with a few areas to consider:</p>
+    <p>Since we had a pretty clear idea of what we were tasked with building, I had to think about what improvements, if any, needed to be made to the user flow and how we'd do that without deviating too much from the timeline. From reviewing the native app, measuring analytics data and talking with stakeholders and users I came up with a few areas to consider:</p>
+    
     <ul>
         <li><strong>Photo Quality</strong> - Poor quality or the wrong photos resulted in inaccurate estimates and rework that costs the company money and users time and frustration.</li>
         <li><strong>Steps to Complete</strong> - Reduce drop-off and time to complete by eliminating screens, taps and unnecessary form fields.</li>
         <li><strong>Clarity of Message</strong> - Reduce the amount of textual content, consistent placement of elements, and visuals to streamline the process to again reduce drop off rate and time to complete.</li>
     </ul>
 
-    <img class="fullcol" src="/allstate/img/photo-intake.png" alt="" />
+    <img class="fullcol" src="/allstate/img/photo-intake.jpg" alt="" />
     
     <p>Above are some of the final results, using Allstate brand guidelines. I was able to remove 10 screens from the original guided flow. One of the better improvements was deep linking the user into the process with a link provided in the Allstate native app or in an email/text which eliminated several steps; entering vehicle information and the claim number. The developers were also able to increase the quality of saved photos making it downstream to the claims adjusters to help increase estimate accuracy. I also reduced element clutter and gave screens elements consistent placement, especially the buttons taking you to next steps, putting them in easy to reach areas for your thumbs.</p>
     
     <p>Photo Intake has several different flows depending on the type of damage (auto or property) and whether the process is guided, in which the user is asked to verify specific photos, or unguided, where they can upload photos of their choosing. I designed the app for each of these flows and for several other brands under the Allstate umbrella.</p>
     
     <img class="fullcol" src="/allstate/img/flow-process-diagrams.png" alt="" />
-
+    
+    <p>Along with making updates based on business needs we also collected feedback from users and the engineering team and prioritized it with the PM to find the best features and updates to make.</p>
+    
+    <img class="midcol" src="/allstate/img/effort-import.jpg" alt="" />
 
     <h2>Virtual Assist</h2>
     <p class="intro">After the successful launch of Photo Intake I was also given another product, Virtual Assist, an app that allows users to video chat and share damage in order to get more difficult claims processed quickly.</p>
@@ -172,6 +178,15 @@
     
     <img class="fullcol" src="/allstate/img/collective-knowledge-Assessment-Photos.png" alt="" />
     
+    <p>Besides the assessment there were many friction points in the onboarding process. Below is the onboarding flow with proposed updates to reduce the onboarding time drastically.</p>
+    <img class="fullcol" src="/allstate/img/collective-registration-process-update-proposal.png" alt="registration process updates" />
+    <p>There were a few big issues with onboarding:</p>
+    <ul>
+        <li><strong>Penny Test</strong> In order to do work a user needed to submit bank information. A small amount of money was sent to their account and they needed to verify the amount, all before being able to do work. Since, this was only important for doing withdrawals after completing work, I proposed letting the user complete work and prompt them for the information before they are able to withdraw their earnings, if they haven’t already completed the test.</li>
+        <li><strong>W-9</strong> We were also gating the process behind a W-9 form requirement that was sent via email. I proposed updating the process so the user could fill out and sign the form from the application, so they can start working immediately.</li>
+        <li><strong>Modals</strong> There were also two terms and conditions like modal, that I proposed where moved to the signup page so that it could be consolidated down to a single screen, for quicker onboarding.</li>
+    </ul>
+    
     <p>The job process interface used the same clean and simple styles as the onboarding process, which added consistency to the experience and cut down on development time.</p>
     
     <img class="fullcol" src="/allstate/img/collective-Estimate-Enter Plate.png" alt="" />
@@ -179,6 +194,11 @@
     <p>New and existing users were taken to the dashboard after logging in. The dashboard is where users can start new jobs and see their job and payment history.</p>
     
     <img class="fullcol" src="/allstate/img/dashboard-filled.png" alt="dashboard" />
+    
+    <p>One of the issues you don't always think about with a feature or app design is success. In this case, after launch we had more workers than work, so needed to quickly come up with a solution for what happens when the job queue hits 0. This is my design file right out of Sketch.</p>
+    
+    <img class="fullcol" src="/allstate/img/queue-concept.png" alt="job queuing process" />
+    
     
     <p>The profile was one of the last additions to Collective. One of the issues we ran into was different states had different licensing requirements, so we created a way for users to upload their license information, that we could then verify on the backend. This prevented having to manually verify and assign different gig workers to each state they were eligible to work in.</p>
 

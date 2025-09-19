@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="farecompare">
 
 <header id="work-samples">
     <div name="top" class="wrap">
@@ -32,41 +32,51 @@
     
 <div id="casestudy" class="wrap">
 
-    <p>I previously worked at FareCompare, a small flight search and data company as the sole product designer. While there I spent time on a variety of projects, some of which were providing updated design to many of the older applications being converted to React.JS, starting with the main flights search app, hotels and auto search, the account screens, some email templates, getaway map and deals areas. Pretty much everything.</p>
-    
-    <p>The last project was to build a seperate site with updated but not completely different interface elements. Basically, a reskin. I created a quick mark and logo and the interface for the homepage and main search pages.</p>
-    
-    <img class="fullcol" src="/farecompare/img/flight-search-logo.png" alt="logo design" />
-    
-    <p>The interface remained similar so the same code base could be used, just with a design refresh to the colors and styles of the elements.</p>
-    
-    <img class="fullcol" src="/farecompare/img/flight-search-ui.png" alt="flight results interface" />
-    
-    <p>With the Farecompare site, my goal was to establish a little more modern look without moving too far away from current colors, style and branding. With established apps, it&rsquo;s best to make incremental changes instead of taking a sledgehammer to something, even if it might need it. I lightened up the grey background and simplified the color pallet. The only color addition was an accent color for action buttons.</p>
-    
-	<img class="fullcol" src="/farecompare/img/flight-results.png" alt="flight search results" />
-	
-	<p>Some of the styles for input field states. Currently, we don't offer some of this functionality but it&rsquo;s in the works. Also, a few little illustrations.</p>
-	
-    <img class="fullcol" src="/farecompare/img/style1.jpg" alt="" />
-    
-	<p>Email template concepts for price alerts, giving users even better data not only about current prices but using historic data to predict price changes.</p>
-	
-    <img class="fullcol" src="/farecompare/img/emails.png" alt="" />  
+    <p class="intro">While at Farecompare as the sole product designer, I spent time on a variety of projects including: </p>
+    <ul>
+        <li>Redesigning the homepage and core flight search application</li>
+        <li>Designing the auto rental and hotel search applications</li>
+        <li>A deals portal</li>
+        <li>Style guides and design system components</li>
+        <li>Email templates for saved searches and deals </li>
+        <li>Departure and destination landing pages for SEO and deals </li>
+        <li>A getaway map application</li>
+    </ul>
+        
+    <h5>Design Challenge</h5>
+    <p>One of the challenges of working on these designs was the competing ways the company made revue. As the name implies, you are able to compare flights, hotels or auto rentals across companies but also across other websites. We could make money by the user booking from our site, or from sending the user off to a competitor. So there was a constant tradeoff between streamlining the onsite booking process and promoting third party ads.</p>
       
-	<p>Below is an initial homepage design concept. The style and content changed over time. The current homepage doesn't really have much of a call to action above the fold so I included space for that. The other element I felt was important was to get email sign ups as soon as possible; giving users deals from their local airport/city.</p>
-	
-	<img class="fullcol" src="/farecompare/img/home.png" alt="FareCompare homepage design" />
-	
-	<p>After creating the flight results I created something similar for hotels to keep things consistent. The map will be a new integration, still in the works.</p>
+    <p>For the homepage, my focus was to keep the design aesthetic consistent with the other applications and provide a portal into the various applications we had created as well as be strong from an SEO perspective. Also, providing deals specific to their local estination and strong email signup CTAs.</p> 
+    
+    <img class="fullcol" src="/farecompare/img/home.png" alt="FareCompare homepage design" /> 
+    
+    <p>For the main flight search, I went with a clean layout which highlights the flight display but also provides space for ad placement.</p>
+        
+  	<img class="fullcol" src="/farecompare/img/flight-results.png" alt="flight search results" />
+    
+	<p>Hotel results used a similar layout to flights but incorporated a map because location is often key for travellers.</p>
 	
 	<img class="fullcol" src="/farecompare/img/hotel-results.png" alt="" />
+
+    <p>There are various personas we wanted to address:</p>
+    <ul>
+        <li><strong>Set Destination and Date</strong> - Most travellers know where they need to go and when, they simply want the best price, convenience and amenities </li>
+        <li><strong>Set Date</strong> - Some user knew when they had vacation but might have not had a specific destination in mind or were looking for something within a certain budget</li>
+        <li><strong>Deals </strong> - Some users were flexible with their travel and wanted to get the most bang for their buck.</li>
+    </ul>
+    <p>We created new advanced search tools to address different user's needs. Also, some little illustations I created.</p>
+    
+    <img class="fullcol" src="/farecompare/img/style1.jpg" alt="advanced search components and illustrations" /> 
+    
+ 	<p>Another project was advanced options for price alerts. Instead of just the standard change in price email we'll be allowing users to select specific airlines, stops, price ranges, and lots of other features. </p>
 	
-	<p>Another project that was in the works while I was working here was advanced options for price alerts. Instead of just the standard change in price email we'll be allowing users to select specific airlines, stops, price ranges, and lots of other features. </p>
+	<img class="fullcol" src="/farecompare/img/price-alert-advanced-filters.png" alt="" />   
+    
+  	<p>Email template concepts for price alerts, giving users even better data not only about current prices but using historic data to predict price changes.</p>
 	
-	<img class="fullcol" src="/farecompare/img/price-alert-advanced-filters.png" alt="" />
+    <img class="fullcol" src="/farecompare/img/emails.png" alt="" />  
 	
-	<p>And yet another project is a deals app, which will display deals from the selected departing city or airport.</p>
+	<p>And yet another project is a deals app, which will display deals from the selected departing city or airport. This was created for users who are price sensitive but not specific on when or where they wanted to go.</p>
 	
 	<img class="fullcol" src="/farecompare/img/flight-deals.png" alt="" />
 	
@@ -81,6 +91,16 @@
     <p>An example of a category page template. Most of these pages I designed and then created the html and css for and handed them off to our WordPress guy to turn into templates.</p>
     
     <img class="fullcol" src="/farecompare/img/tag-template.png" alt="" />
+    
+    <p>The last project was to build a seperate site with updated but not completely different interface elements. Basically, a reskin. I created a quick mark and logo and the interface for the homepage and main search pages.</p>
+    
+    <img class="fullcol" src="/farecompare/img/flight-search-logo.png" alt="logo design" />
+    
+    <p>The interface remained similar so the same code base could be used, just with a design refresh to the colors and styles of the elements.</p>
+    
+    <img class="fullcol" src="/farecompare/img/flight-search-ui.png" alt="flight results interface" />
+
+    
 </div>
 
 
