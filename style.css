@@ -250,10 +250,12 @@ img.national-sales { max-width: 680px; margin: 16px auto; }
 #casestudy .five-col div img { width: 40px; height: 40px; margin: 16px auto 0; }
 
 
-#acuity-intro, #agency-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 680px; }
+#acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 680px; }
 #acuity-intro h2 { max-width: 680px; margin: 64px auto 32px; font-size: 36px; line-height: 48px; text-align: center; }
 #acuity-intro img { width: 100%; max-width: 1105px; height: auto; margin: 0 auto -80px auto; }
-#agency-intro img { width: 100%; max-width: 1208px; height: auto; margin: 0 auto -80px auto; }
+
+#agency-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 560px; }
+#agency-intro img { width: 100%; max-width: 1208px; height: auto; margin: -40px auto -80px auto; }
 @media screen and (max-width: 1208px) {
 	#agency-intro img { width: 100%; max-width: none; height: auto; margin: 0 auto 0 auto; }
 }
