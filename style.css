@@ -71,7 +71,7 @@ a:hover { text-decoration: underline; }
 
 header { background: #770D00 url(img/tylerbg.png) bottom center no-repeat; overflow: hidden; height: 300px; }
 header nav { display: block; margin: 76px auto 0; width: 320px; text-align: center;}
-header nav ul { list-style: none; margin: 0; padding: 0; display: inline; text-align: center; }
+header nav ul { list-style: none; margin: 0; padding: 0; display: inline; text-align: center; display: flex; justify-content: center; align-items: center; }
 header nav ul li { margin: 0; padding: 0; display: inline-block; }
 header nav ul li a { color: #fff; }
 header nav ul li a img { margin: 0 24px; }
@@ -183,6 +183,10 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 }
 #casestudy p.intro { font-weight: 300; line-height: 36px; font-size: 18px; }
 #casestudy img.fullcol { margin: 10px auto; width: 100%; }
+#casestudy img.midcol { margin: 16px auto; width: 680px; }
+@media screen and (max-width: 680px) {
+	#casestudy img.midcol { margin: 16px auto; display: block; width: 100%; }
+}
 #casestudy img.old { margin: 40px auto; display: block; max-width: 1400px; }
 @media screen and (max-width: 1420px) {
 	#casestudy img.old { margin: 40px auto; display: block; max-width: 1200px; }
