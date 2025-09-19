@@ -275,7 +275,7 @@ img.sales-goal { width: 476px; height: auto; margin: 16px auto; }
 #farecompare { background: #fff url(/farecompare/img/farecompare-bg.svg) top center no-repeat; background-size: 2400px 700px; }
 #farecompare ::selection { background-color: #006AB7; color: #fff; }
 #farecompare header { background: none;  }
-#farecompare-intro-img { width: 100%; max-width: 1105px; height: auto; margin: 0 auto 0 auto; }
+#farecompare-intro-img { width: 100%; max-width: 1105px; height: auto; margin: -60px auto 0 auto; }
 
 
 /* ========== ALLSTATE ========== */ 
