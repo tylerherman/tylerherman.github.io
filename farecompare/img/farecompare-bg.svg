@@ -47,6 +47,7 @@
 <circle cx="299" cy="445" r="7" fill="#00508B" stroke="white" stroke-width="2"/>
 <circle cx="177" cy="457" r="7" fill="#00508B" stroke="white" stroke-width="2"/>
 <circle cx="55" cy="346" r="7" fill="#00508B" stroke="white" stroke-width="2"/>
+<rect y="654" width="2400" height="46" fill="url(#paint2_linear_270_11227)"/>
 </g>
 <defs>
 <filter id="filter0_d_270_11227" x="-50.5322" y="281.556" width="2538.8" height="519.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -75,6 +76,10 @@
 </linearGradient>
 <linearGradient id="paint1_linear_270_11227" x1="1103.13" y1="535.219" x2="1103.13" y2="755.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="white" stop-opacity="0.7"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint2_linear_270_11227" x1="1079.5" y1="662" x2="1079.5" y2="694.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <clipPath id="clip0_270_11227">
