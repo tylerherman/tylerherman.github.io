@@ -165,40 +165,41 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 
 
 
-#casestudy { margin: 24px auto 48px; display: flex; flex-flow: column; }
-#casestudy * {box-sizing: border-box;}
+.casestudy { margin: 24px auto 48px; display: flex; flex-flow: column; }
+.casestudy * {box-sizing: border-box;}
 @media screen and (max-width: 1020px) {
-	#casestudy { margin: 30px auto; }
+	.casestudy { margin: 30px auto; }
 }
-#casestudy h2, #casestudy h3 { font-size: 36px; text-align: center; }
-#casestudy hr { border-top: 4px solid #ddd; width: 100px; margin: 15px auto; }
-#casestudy h5 { line-height: 32px; font-size: 28px; width: 680px; margin: 30px auto 20px; padding: 0 30px; }
+.casestudy h2, .casestudy h3 { font-size: 36px; text-align: center; }
+.casestudy hr { border-top: 4px solid #ddd; width: 100px; margin: 15px auto; }
+.casestudy h5 { line-height: 32px; font-size: 28px; width: 680px; margin: 30px auto 20px; padding: 0 30px; }
 @media screen and (max-width: 680px) {
-	#casestudy h5 { line-height: 32px; font-size: 28px; width: 100%; margin: 30px auto 20px; padding: 0 30px; }
+	.casestudy h5 { line-height: 32px; font-size: 28px; width: 100%; margin: 30px auto 20px; padding: 0 30px; }
 }
-#casestudy p, #casestudy ul { line-height: 28px; font-size: 15px; width: 680px; margin: 20px auto; padding: 0 30px; display: block; }
-#casestudy ul { padding-left: 60px; line-height: 28px; font-size: 15px; list-style: disc; }
+.casestudy p, .gradient-bg p, .casestudy ul { line-height: 28px; font-size: 15px; width: 680px; margin: 20px auto; padding: 0 30px; display: block; }
+.gradient-bg p { width: 624px; }
+.casestudy ul { padding-left: 60px; line-height: 28px; font-size: 15px; list-style: disc; }
 @media screen and (max-width: 800px) {
-	#casestudy p, #casestudy ul { line-height: 28px; font-size: 18px; margin: 20px 0px; width: auto; }
+	.casestudy p, .gradient-bg p, .casestudy ul { line-height: 28px; font-size: 18px; margin: 20px 0px; width: auto; }
 }
-#casestudy p.intro { font-weight: 300; line-height: 36px; font-size: 18px; }
-#casestudy img.fullcol { margin: 16px auto; width: 1024; }
+.casestudy p.intro { font-weight: 300; line-height: 36px; font-size: 18px; }
+.casestudy img.fullcol, .gradient-bg img.fullcol { margin: 16px auto; width: 1024px; display: block; }
 @media screen and (max-width: 1024px) {
-	#casestudy img.fullcol { margin: 16px auto; width: 100%; }
+	.casestudy img.fullcol, .gradient-bg img.fullcol { margin: 16px auto; width: 100%; }
 }
-#casestudy img.midcol { margin: 16px auto; width: 680px; }
+.casestudy img.midcol { margin: 16px auto; width: 680px; }
 @media screen and (max-width: 680px) {
-	#casestudy img.midcol { margin: 16px auto; display: block; width: 100%; }
+	.casestudy img.midcol { margin: 16px auto; display: block; width: 100%; }
 }
-#casestudy img.old { margin: 40px auto; display: block; max-width: 1400px; }
+.casestudy img.old { margin: 40px auto; display: block; max-width: 1400px; }
 @media screen and (max-width: 1420px) {
-	#casestudy img.old { margin: 40px auto; display: block; max-width: 1200px; }
+	.casestudy img.old { margin: 40px auto; display: block; max-width: 1200px; }
 }
 @media screen and (max-width: 1220px) {
-	#casestudy img.old { margin: 40px auto; display: block; max-width: 1000px; }
+	.casestudy img.old { margin: 40px auto; display: block; max-width: 1000px; }
 }
 @media screen and (max-width: 1000px) {
-	#casestudy img.old { margin: 40px auto; display: block; max-width: auto; width: 100%; }
+	.casestudy img.old { margin: 40px auto; display: block; max-width: auto; width: 100%; }
 }
 .team-role-duration { margin: 8px auto 0; width: 620px; display: flex; align-items: flex-start; flex: 0 0 100%; flex-flow: row; gap: 16px; justify-content: space-between; }
 @media screen and (max-width: 640px) {
@@ -206,29 +207,29 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 }
 	.team-role-duration div { display: flex; flex-flow: column; }
 	.team-role-duration h6 { font-size: 18px; text-transform: uppercase; font-weight: 600; }
-	#casestudy .team-role-duration ul { list-style: none; font-size: 15px; padding: 8px 0; width: auto; margin: 0; }
+	.casestudy .team-role-duration ul { list-style: none; font-size: 15px; padding: 8px 0; width: auto; margin: 0; }
 	
-#casestudy .tabs { max-width: 620px; margin: 16px auto; }
-#casestudy .tabs-nav { padding:0; margin:0; width: 626px; }
+.casestudy .tabs { max-width: 620px; margin: 16px auto; }
+.casestudy .tabs-nav { padding:0; margin:0; width: 626px; }
 @media screen and (max-width: 640px) {
-	#casestudy .tabs { max-width: 100%; width: 100%; padding-left: 8px; padding-right: 8px; }
-	#casestudy .tabs-nav { width: 100%; }
+	.casestudy .tabs { max-width: 100%; width: 100%; padding-left: 8px; padding-right: 8px; }
+	.casestudy .tabs-nav { width: 100%; }
 }
-#casestudy .tabs-nav li { list-style: none; padding: 0; margin: 0; display: block; float: left; width: 33%; }
-#casestudy .tabs-nav li a { color: #646464; font-weight: 600; display: block; border: 1px solid #f2f2f2; border-bottom: 3px solid #90FFC9; background: #fbfbfb; padding: 12px 16px 16px; margin: 0; height: auto; line-height: 24px; }
-#casestudy .tabs-nav li a:hover { text-decoration: none; }
-#casestudy .tabs-nav li:first-child a { border-right: 0; border-top-left-radius: 6px; border-bottom: 3px solid #B6DCFF; }
-#casestudy .tabs-nav li:last-child a { border-left-color: transparent; border-top-right-radius: 6px; border-bottom: 3px solid #FFED89; }
-#casestudy .tabs-nav li.tab-active a { display: block; background: #fff; border-bottom-color: transparent; color: #646464; cursor: default; }
-#casestudy .tab-active a:hover { text-decoration: none; cursor: default; }
-#casestudy .tab-active a span, #casestudy .tabs-nav li a span { display: block; clear: both; font-size: 14px; line-height: 18px; font-weight: 400; }
-#casestudy .tabs-stage { border: 1px solid #f2f2f2; border-radius: 0 0 6px 6px; border-top: 0; clear: both; padding: 16px; position: relative; top: -1px; }
+.casestudy .tabs-nav li { list-style: none; padding: 0; margin: 0; display: block; float: left; width: 33%; }
+.casestudy .tabs-nav li a { color: #646464; font-weight: 600; display: block; border: 1px solid #f2f2f2; border-bottom: 3px solid #90FFC9; background: #fbfbfb; padding: 12px 16px 16px; margin: 0; height: auto; line-height: 24px; }
+.casestudy .tabs-nav li a:hover { text-decoration: none; }
+.casestudy .tabs-nav li:first-child a { border-right: 0; border-top-left-radius: 6px; border-bottom: 3px solid #B6DCFF; }
+.casestudy .tabs-nav li:last-child a { border-left-color: transparent; border-top-right-radius: 6px; border-bottom: 3px solid #FFED89; }
+.casestudy .tabs-nav li.tab-active a { display: block; background: #fff; border-bottom-color: transparent; color: #646464; cursor: default; }
+.casestudy .tab-active a:hover { text-decoration: none; cursor: default; }
+.casestudy .tab-active a span, .casestudy .tabs-nav li a span { display: block; clear: both; font-size: 14px; line-height: 18px; font-weight: 400; }
+.casestudy .tabs-stage { border: 1px solid #f2f2f2; border-radius: 0 0 6px 6px; border-top: 0; clear: both; padding: 16px; position: relative; top: -1px; }
 @media screen and (max-width: 640px) {
-	#casestudy .tabs-stage { padding: 8px; }
+	.casestudy .tabs-stage { padding: 8px; }
 }
-#casestudy .tabs-stage h6 { width: auto; padding: 0 16px; margin: 16px 0; font-size: 16px; font-weight: 600; }
-#casestudy .tabs-stage p { width: auto; padding: 0 16px; margin: 16px 0; }
-#casestudy .tabs-stage ul { width: auto; padding: 0 0 0 36px; margin: 16px 0; }
+.casestudy .tabs-stage h6 { width: auto; padding: 0 16px; margin: 16px 0; font-size: 16px; font-weight: 600; }
+.casestudy .tabs-stage p { width: auto; padding: 0 16px; margin: 16px 0; }
+.casestudy .tabs-stage ul { width: auto; padding: 0 0 0 36px; margin: 16px 0; }
 img.sales-process { margin: 16px auto; }
 @media screen and (max-width: 580px) {
 	img.sales-process { width: 100%; height: auto; }
@@ -248,30 +249,31 @@ img.national-sales { max-width: 680px; margin: 16px auto; }
 @media screen and (max-width: 480px) {
 	.five-col div { flex: 1 1 100%; }
 }
-#casestudy .five-col div p { width: 100%; text-align: center; padding: 0 12px; margin-top: 0px; }
-#casestudy .five-col div h5 { width: 100%; text-align: center; margin: 8px 0; font-size: 18px; }
-#casestudy .five-col div img { width: 40px; height: 40px; margin: 16px auto 0; }
+.casestudy .five-col div p { width: 100%; text-align: center; padding: 0 12px; margin-top: 0px; }
+.casestudy .five-col div h5 { width: 100%; text-align: center; margin: 8px 0; font-size: 18px; }
+.casestudy .five-col div img { width: 40px; height: 40px; margin: 16px auto 0; }
 
 
-#acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 680px; }
+#acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 740px; }
+#acuity-intro img { display: block; width: 1208px; height: auto; margin: 0 auto; }
 #acuity-intro h2 { max-width: 680px; margin: 64px auto 32px; font-size: 36px; line-height: 48px; text-align: center; }
-#acuity-intro img { width: 100%; max-width: 1105px; height: auto; margin: 0 auto -80px auto; }
-
-#agency-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 560px; }
-#agency-intro img { width: 100%; max-width: 1208px; height: auto; margin: 20px auto -80px auto; }
+#agency-intro img { width: 100%; max-width: 1208px; height: auto; margin: 20px auto -80px auto; display: block; }
 @media screen and (max-width: 1208px) {
 	#agency-intro img { width: 100%; max-width: none; height: auto; margin: 0 auto 0 auto; }
 }
 img.sales-goal { width: 476px; height: auto; margin: 16px auto; }
-@media screen and (max-width: 1105px) {
+@media screen and (max-width: 1208px) {
 	#acuity-intro { height: auto; }
-	#acuity-intro img { margin-bottom: 0px; }
+	#acuity-intro img { margin-bottom: 0px; width: 100%; height: auto; }
 }
 @media screen and (max-width: 476px) {
 	img.sales-goal { width: 100%; height: auto; margin: 16px auto; }
 }
+.gradient-bg { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0px 0; padding: 0 0 24px 0; }
+
 
 /* ========== FARECOMPARE ========== */ 
+
 #farecompare { background: #fff url(/farecompare/img/farecompare-bg.svg) top center no-repeat; background-size: 2400px 700px; }
 #farecompare ::selection { background-color: #006AB7; color: #fff; }
 #farecompare header { background: none;  }
@@ -280,7 +282,7 @@ img.sales-goal { width: 476px; height: auto; margin: 16px auto; }
 
 /* ========== ALLSTATE ========== */ 
 
-img#allstate-intro { width: 100%; max-width: 777px; height: auto; margin: -20px auto 0; }
+img#allstate-intro { width: 100%; max-width: 777px; height: auto; margin: 0px auto 0; }
 
 
 
