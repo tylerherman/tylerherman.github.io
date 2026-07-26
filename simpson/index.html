@@ -31,7 +31,7 @@
 
 <div id="acuity-intro">
     <div class="a-image-wrap">
-        <h2>Reimagining the way medical device sales gets done.</h2>
+        <h2>Designing Cloud Director in an AI-accelerated pipeline</h2>
         <img src="/acuitymd/img/targeting2.png" alt="AcuityMD targeting on mobile and desktop" />
     </div>
 </div>            
@@ -39,108 +39,58 @@
     
 <div class="wrap casestudy">
 
+    <h2>Designing Cloud Director</h2>
+    
+    <p>At Simpson Strong-tie I took over the designed and prototypeed Cloud Director, a workflow platform for truss manufacturing plants to get it ready for production. The users span office and production floor, from schedulers to plant managers to builders, where a bad design decision costs real operational time and money, not just friction. Everything below is less a list of features and more a record of how I think about speed, quality, and where AI actually helps versus where it needs a human check before it reaches a customer.</p>
+    
+    <h3>Finding the gap: prototype infrastructure</h3>
+    
+    <video class="case-study-video" autoplay muted loop playsinline>
+        <source src="img/prototype.mp4" type="video/mp4">
+    </video>
+    <p>Simpson's internal AI prototyping tool, Abacus, doesn't support cloning or forking prototypes and isn't really setup for collaboration. I proposed a new server setup and app to display all prototypes and allow users to share or if not clone a project to create iterations. This way, users can a/b test features or at least work on shared projects. Also added functionality for commenting so people can provide feedback within the app and pin them to specific areas of the screen.</p>
+
+
     <h3>Splitting time: launch polish and what comes next</h3>
 
     <p>Cloud Director had to be ready for a trade show release date, which meant most of my time went into getting the product ready to ship. The design system was already outdated, but replacing it wasn't an option since we were locked into Telerik on the front end, so we were extremely limited in what we could change. On top of that, several dev teams were building in parallel without much review before implementation, so real inconsistencies had piled up across the product by the time launch got close, with limited bandwidth left to fix everything we would have wanted to.</p>
     
     <p>We were also getting pressure from management to get the application looking polished for release. Given the deadline and constraints, I ran several design cleanup passes to catch and document issues, then fixed what I could myself. I got access to the dev environment and wrote CSS directly, since that was the fastest way to close the gap before release.</p>
     
-    <img class="fullcol" src="/simpson/img/outline.jpg" alt="creating projects and customers" />
+    <img class="fullcol" src="/simpson/img/outline.png" alt="creating projects and customers" />
     
     <p class="caption">I outlined the issues with many of our core flows in the app to bring them to attention to the team and propose updates. As you can see here, two separate ways of creating customers, very inconsistent css and style treatments, and lots of areas for improvement. I left most style issues out of the notes as I could fix most of those myself.</p>
 
-    <img class="fullcol" src="/simpson/img/mobile.jpg" alt="design cleanup before and after for the add project modal" />
+    <img class="fullcol" src="/simpson/img/updates.jpg" alt="design cleanup of the add customer drawer and add project modal" />
     
     <p class="caption">Some cleanup to the create project modal and create customer drawer. Far from perfect but what we were able to do with the time crunch to get the app ready for release.</p>
 
     <p>At the same time, launch wasn't the only thing on my plate. I was interviewing beta users for feedback and designing features for the post launch roadmap, so a good part of this period was moving between getting the current product ready to ship and shaping what it needed to become next.</p>
+    
+    <img class="fullcol" src="/simpson/img/project process.png" alt="automation steps" />
+    
+    <p>There are many tedious steps from taking in a new project from a customer to getting paid for that work, so I outlined the general process and highlighted places Ai or general automations might come into play to speed things up.</p>
+    
+    <h3>Simplified Pricing Process</h3>
+    
+    <video class="case-study-video" autoplay muted loop playsinline>
+        <source src="img/pricing.mp4" type="video/mp4">
+    </video>
+    <p>One area of the app I was having issues with way pricing and with the project model wanted to address. Currently every design component in a project shows up on the pricing page, whether you want to price it or not. So I designed and prototyped a new workflow where you can add designs to pricing or select designed components directly from the pricing page.</p>
+    
+    <p>The real reason behind this was user feedback. Components might not be designed at all at the bid stage or very roughly so, so its better for the customer to be able to add a line item bid, then replace the costs when the components have been designed. This redesign makes it super easy to select the components you want to add to a line item. You can either replace the pricing details or if the bid has already been won, just update the cost of the materials.</p>
+    
+    <h3>Project Model Updates</h3>
+    <p>The big post release feature update I was doing research on and designing in Figma and Prototypes for was the project model update. Our initial release only allowed a user to create a Project that contained one set of designs and pricing details that could be sent to production. But there are many ways a customer might want to setup a project. For example you might have multiple bids open at once, each bid could have more than one order created from it, and each order could have change orders created from that.</p>
+    
+    <video class="case-study-video" autoplay muted loop playsinline>
+        <source src="img/project.mp4" type="video/mp4">
+    </video>
+    
+    <p>Additionally, customers have really been asking for ways to create edit custome workflows. So I created a prototype to show this type of behavior. A user would be able to define the content of the table by selecting columns, also be able to select from all tasks for tracking purposes and create custome filters on top of this to create highly specialized views. These view could be shared with others or set as defaults for specific roles in the company. This way everyone can have workflows setup just for their specific tasks.</p>
 
-  
-    
-    <p>We focused on the sales rep persona for many of our product initiatives because better business outcomes start at the local level. Typically a national sales director will create forecasts for the year and pass down new quotas. Which is given to regional managers to divvy up for each of their sales reps. And finally the sales reps who are closest to the sales process are left to find some way to hit the number they were given. </p>
-
-    <img src="/acuitymd/img/sales-process.svg" width="580px" class="sales-process" alt="sales process between personas" />
-
-    <p>If we could get sales reps to provide more accurate and timely information, it could be better used to create more accurate forecasts and greatly help with strategy and planning at both the regional and national levels. To help the sales rep persona we needed a mobile app they could use in the field. To help:</p>
-    <ul>
-        <li>Know which doctors and hospitals were doing the most volume</li>
-        <li>Find connections and ways to get in front of the right people</li> 
-        <li>Manage their opportunities from prospect through to closed-won </li>
-    </ul>
-    
-    <p>Early on, to expand away from the targeting platform we needed to build out the supporting interface to both onboard and allow customers to self-manage their accounts. We rolled up much of this functionality into a new product section called Markets, where an account administrator could define the medical codes they wanted to track and put them into groups, and then assign those groups to their various products, in order to get accurate procedure and diagnosis volume for doctors and hospitals.</p>
-
-    <img class="fullcol" src="/acuitymd/img/mobile.jpg" alt="mobile screen designs" />
-
-    <h3 style="margin-top: 32px">Quota &amp; User Engagement</h3>
-    <p>The key element that I wanted to tie into the application was quota management and attainment. Generally a sales rep's pay and performance are tied to their quarterly quota. Managers instruct and gage performance against it, and senior management use this progress for forecasting and procurement, and those numbers go all the way to the board and/or shareholders for larger companies. The data sales reps enter is super important, and tying Targeting to the user's quota is massive.</p>
-
-    <img src="/acuitymd/img/sales-goal.svg" class="sales-goal" alt="sales quota for a sales rep" />
-    
-    <p>We created a way for users at every level of the organization to define, measure and track their sales quota progress with the goal of AcuityMD becoming the go to source for up-to-date sales data.</p>
-    
-    <img src="/acuitymd/img/national-sales.svg" class="national-sales" alt="sales quota for the nation" />
-
-    <p>For an application that sells seats, engagement is critical, so building out the sales rep sales processes is what kept users coming back.</p>
-    
-    <div class="five-col">
-        <div>
-            <img width="40" src="/acuitymd/img/icon-targeting.svg" alt="" />
-            <h5>Targeting</h5>
-            <p>Finding the right opportunities</p>
-        </div>
-        <div>
-            <img width="40" src="/acuitymd/img/icon-pipeline.svg" alt="" />
-            <h5>Pipeline</h5>
-            <p>Track opportunities through the sales process</p>
-        </div>
-        <div>
-            <img width="40" src="/acuitymd/img/icon-scheduling.svg" alt="" />
-            <h5>Scheduling</h5>
-            <p>Manage meetings and sales calls</p>
-        </div>
-        <div>
-            <img width="40" src="/acuitymd/img/icon-quoting.svg" alt="" />
-            <h5>Quoting</h5>
-            <p>Create sales quotes for new business</p>
-        </div>
-        <div>
-            <img width="40" src="/acuitymd/img/icon-customer.svg" alt="" />
-            <h5>Customers</h5>
-            <p>Track customers after sales close</p>
-        </div>
-    </div>
-    
-    <p>Early on, to expand away from the targeting platform we needed to build out the supporting interface to both onboard and allow customers to self-manager their accounts. We rolled up much of this functionality into a new product section called Markets, where an account administrator could define the medical codes they wanted to track and put them into groups, and then assign those groups to their various products, in order to get accurate procedure and diagnosis volume for doctors and hospitals.</p>
-    
-    <img class="fullcol" src="/acuitymd/img/products.jpg" alt="Figma mocks of markets" />
-    
-    <p>In the same way we needed to allow customers to define how to track and manage volume against healthcare providers and hospitals, they also needed to manage their sales teams, which became Territories. Each sales rep has their own territory that is part of a region, which is inside of a business unit, which there can be multiple of. To save development time and give users a familiar experience, I leveraged much of the table components, creation process, and drill-down flows from Markets in the Territories module.</p>
-    
-    <img class="fullcol" src="/acuitymd/img/territories.jpg" alt="territories edit mode" />
-    
-    <p>The minimum viable version of territories only included a table view but users also wanted a visual way to view, create and edit territories, especially because the initial version worked off of areas defined by zip codes, and most people don't know the natural boundaries of zip codes. We experimented with different map designs and tools to highlight and edit territories. Ultimately, users needed to be able to split out areas at a more granular level, the site of care, or specific address level, which is what we ended up getting down to.</p>
-    
-    <img class="fullcol" src="/acuitymd/img/territories2.jpg" alt="territories ui" />
 
     
-    <h3>Visual Design</h3>
-    <p>Along with building out the interface I also have been working on branding, advertising and collateral material. Here are some examples of ads I've created for internal content promotion, events we host or are going to and feature promotion.</p>
-
-    <img class="fullcol" src="/acuitymd/img/ads.jpg" alt="ads for linked and paid sources" />
-    
-    <p>Postcards and physical print-outs? Yes. I also designed physical collateral for sales reps, booth signage, postcards, and product pages for our trade shows.</p>
-
-    <img class="fullcol" src="/acuitymd/img/postcards.jpg" alt="event and product postcard collateral" />
-    <img class="fullcol" src="/acuitymd/img/print.jpg" alt="event and product postcard collateral" />
-
-    <h5>Flywheel</h5> 
-
-    <p>Besides working on the application, advertising and branding I also worked on all the branding and signage for the event we put on each year called Flywheel. Started with the logo and then built out all websites, slides, posters, floor decals, merch, and everything else you could think of.</p>
-    
-    <img class="fullcol" src="/acuitymd/img/flywheel.jpg" alt="Flywheel" />
-    <img class="fullcol" src="/acuitymd/img/flywheel2.jpg" alt="Flywheel" />
-
 </div> 
 
 <footer>
@@ -155,7 +105,7 @@
         </div>
         <p></p>
     </div>
-	<p>tylerherman.dev &copy; 2008-2026 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;707-599-2514&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;contact@tylerherman.com</p>
+	<p>tylerherman.com &copy; 2008-2026 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;707-599-2514&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;contact@tylerherman.com</p>
 </div>              
 </footer>
 

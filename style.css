@@ -253,6 +253,15 @@ img.national-sales { max-width: 680px; margin: 16px auto; }
 .casestudy .five-col div h5 { width: 100%; text-align: center; margin: 8px 0; font-size: 18px; }
 .casestudy .five-col div img { width: 40px; height: 40px; margin: 16px auto 0; }
 
+.case-study-video {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  width: 1024px;
+}
+@media screen and (max-width: 1024px) {
+	.case-study-video { width: 100%; margin: 16px 0; }
+}
 
 #acuity-intro { background: #F2F2F2; background: linear-gradient(0deg,rgba(242, 242, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); width: 100%; margin: 0 0 48px 0; height: 740px; }
 #acuity-intro img { display: block; width: 1208px; height: auto; margin: 0 auto; }
