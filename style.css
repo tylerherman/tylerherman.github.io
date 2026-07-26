@@ -171,6 +171,7 @@ header#about-page { background: #770D00 url(img/about-bg.jpg) bottom center no-r
 	.casestudy { margin: 30px auto; }
 }
 .casestudy h2, .casestudy h3 { font-size: 36px; text-align: center; }
+.casestudy h2.no-intro { margin-top: 36px; }
 .casestudy hr { border-top: 4px solid #ddd; width: 100px; margin: 15px auto; }
 .casestudy h5 { line-height: 32px; font-size: 28px; width: 680px; margin: 30px auto 20px; padding: 0 30px; }
 @media screen and (max-width: 680px) {
